@@ -1,13 +1,15 @@
 import { format } from "date-fns";
-import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { existsSync } from "node:fs";
 
 // --- Configuration ---
 const ETHERSCAN_V2_ENDPOINT = "https://api.etherscan.io/v2/api";
 const SCAM_DB_FILE = "scams.json";
+const LOOKBACK_BLOCKS = 500;
+const BATCH_SIZE = 5;
 
-// Specific signatures for the "Quiz" scam
+// Signatures to detect in Source Code
 const FINGERPRINTS = [
     "responseHash",
     "function Try(string",
@@ -15,12 +17,12 @@ const FINGERPRINTS = [
     "isAdmin"
 ];
 
+const SUSPICIOUS_METHODS = ["0xc76de3e9", "0x5f3d328e", "0x054f1b6a"];
+
 interface ChainConfig {
     name: string;
     chainId: string;
     apiBase: string;
-    explorer: string;
-    nativeToken: string;
 }
 
 const CHAINS: Record<string, ChainConfig> = {
@@ -28,8 +30,6 @@ const CHAINS: Record<string, ChainConfig> = {
         name: "Ethereum",
         chainId: "1",
         apiBase: ETHERSCAN_V2_ENDPOINT,
-        explorer: "https://etherscan.io",
-        nativeToken: "ETH",
     },
 };
 
@@ -43,7 +43,6 @@ interface ScamContract {
     status: "ACTIVE" | "DRAINED";
 }
 
-// --- Utils ---
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 class Scanner {
@@ -55,19 +54,25 @@ class Scanner {
         this.apiKey = apiKey;
     }
 
-    async request(params: Record<string, string>) {
+    async request(params: Record<string, string>, retries = 3): Promise<any> {
         const url = new URL(this.chain.apiBase);
         url.searchParams.append("apikey", this.apiKey);
         url.searchParams.append("chainid", this.chain.chainId);
         for (const [k, v] of Object.entries(params)) url.searchParams.append(k, v);
 
-        try {
-            const res = await fetch(url.toString());
-            await sleep(250); // Rate limit
-            return await res.json();
-        } catch (e) {
-            console.error("Fetch error:", e);
-            return { status: "0" };
+        for (let i = 0; i < retries; i++) {
+            try {
+                const res = await fetch(url.toString());
+                const data = await res.json();
+                if (data.status === "0" && data.message === "NOTOK") throw new Error(data.result);
+                return data;
+            } catch (e) {
+                if (i === retries - 1) {
+                    console.error(`Request failed after ${retries} attempts:`, e);
+                    return { status: "0" };
+                }
+                await sleep(1000 * (i + 1));
+            }
         }
     }
 
@@ -81,53 +86,57 @@ class Scanner {
         return res.status === "1" ? Number(BigInt(res.result)) / 1e18 : 0;
     }
 
-    // Scan recent blocks for contract interactions to find candidates
-    async findCandidates(lookbackBlocks: number): Promise<string[]> {
+    async findCandidates(lookback: number): Promise<string[]> {
         const currentBlock = await this.getBlockNumber();
-        const startBlock = currentBlock - lookbackBlocks;
-        console.log(`Scanning blocks ${startBlock} to ${currentBlock} for potential candidates...`);
+        const startBlock = currentBlock - lookback;
+        console.log(`Scanning blocks ${startBlock} to ${currentBlock} (${lookback} blocks)...`);
 
         const candidates = new Set<string>();
+        const blocksToScan: number[] = [];
+        for (let i = 0; i < lookback; i++) blocksToScan.push(currentBlock - i);
 
-        // Sample blocks (Scanning every block hits rate limits too fast on free tier)
-        // We look at the last 10 blocks intensely
-        for (let i = 0; i < 10; i++) {
-            const blockNum = currentBlock - i;
-            const res = await this.request({
-                module: "proxy",
-                action: "eth_getBlockByNumber",
-                tag: "0x" + blockNum.toString(16),
-                boolean: "true"
-            });
+        // Process blocks in batches to respect rate limits but go faster
+        for (let i = 0; i < blocksToScan.length; i += BATCH_SIZE) {
+            const batch = blocksToScan.slice(i, i + BATCH_SIZE);
 
-            if (res.result && res.result.transactions) {
-                for (const tx of res.result.transactions) {
-                    // Check for contract creation (to = null) OR calls to existing contracts
-                    if (tx.to) {
-                        // Method ID filtering (Optional optimization)
-                        // Start: 0xc76de3e9, Try: 0x5f3d328e (Try(string))
-                        const input = tx.input || "";
-                        if (input.startsWith("0xc76de3e9") || input.startsWith("0x5f3d328e")) {
-                            candidates.add(tx.to);
+            await Promise.all(batch.map(async (blockNum) => {
+                const res = await this.request({
+                    module: "proxy",
+                    action: "eth_getBlockByNumber",
+                    tag: "0x" + blockNum.toString(16),
+                    boolean: "true"
+                });
+
+                if (res.result && res.result.transactions) {
+                    for (const tx of res.result.transactions) {
+                        if (!tx.to && !tx.input) continue;
+
+                        const input = tx.input ? tx.input.toLowerCase() : "";
+
+                        // Check against suspicious Method IDs
+                        if (SUSPICIOUS_METHODS.some(m => input.startsWith(m))) {
+                            if (tx.to) candidates.add(tx.to);
                         }
-                    } else if (tx.receipt && tx.receipt.contractAddress) {
-                        // If we could see receipts here, we'd add contract creations
-                        // Proxy endpoint usually doesn't show receipts deeply, 
-                        // so we focus on interactions.
                     }
                 }
-            }
+            }));
+
+            // Small delay between batches
+            await sleep(200);
+            process.stdout.write(`\rProgress: ${Math.min(i + BATCH_SIZE, lookback)}/${lookback} blocks`);
         }
+        console.log("\nScan complete.");
         return Array.from(candidates);
     }
 
     async checkSourceCode(address: string): Promise<string | null> {
+        // 1. Get Source
         const res = await this.request({ module: "contract", action: "getsourcecode", address });
 
         if (res.status === "1" && res.result[0] && res.result[0].SourceCode) {
             const source = res.result[0].SourceCode;
 
-            // CHECK FOR THE SCAM PATTERN
+            // 2. Check for Scam Fingerprints
             const matches = FINGERPRINTS.every(fp => source.includes(fp));
 
             if (matches) {
@@ -144,50 +153,42 @@ async function main() {
 
     const scanner = new Scanner("ethereum", apiKey);
 
-    // 1. Load existing Database
+    // --- LOAD DB ---
     let db: ScamContract[] = [];
     if (existsSync(SCAM_DB_FILE)) {
         try {
             const content = await readFile(SCAM_DB_FILE, "utf-8");
             db = JSON.parse(content);
-        } catch (e) {
-            console.error("Error reading DB, starting fresh.");
-            db = [];
-        }
+        } catch { db = []; }
     }
-
     console.log(`Loaded ${db.length} tracked scams.`);
 
-    // 2. Update balances of known scams
-    console.log("Updating balances...");
+    // --- UPDATE EXISTING ---
+    console.log("Updating balances of known scams...");
     for (const scam of db) {
         try {
             const bal = await scanner.getBalance(scam.address);
             scam.balance = bal;
             scam.last_updated = new Date().toISOString();
             scam.status = bal > 0.01 ? "ACTIVE" : "DRAINED";
-            console.log(`  ${scam.name} (${scam.address.slice(0, 6)}...): ${bal.toFixed(4)} ETH`);
-        } catch (e) {
-            console.error(`  Failed to update ${scam.address}:`, e);
-        }
+        } catch (e) { console.error(`Failed to update ${scam.address}`); }
     }
 
-    // 3. Hunt for new targets
-    // Look back ~50 blocks (approx 10 minutes of activity)
-    // You can increase this if scanning less frequently
-    const candidates = await scanner.findCandidates(50);
+    // --- DISCOVER NEW ---
+    const candidates = await scanner.findCandidates(LOOKBACK_BLOCKS);
     console.log(`Analyzing ${candidates.length} candidate addresses...`);
 
     let newFound = 0;
     for (const address of candidates) {
-        // Skip if already in DB (case insensitive check)
+        // Skip if already in DB (case insensitive)
         if (db.find(x => x.address.toLowerCase() === address.toLowerCase())) continue;
 
         try {
+            // Verify source code
             const name = await scanner.checkSourceCode(address);
             if (name) {
                 const balance = await scanner.getBalance(address);
-                console.log(`🚨 FOUND NEW SCAM: ${name} @ ${address} (${balance} ETH)`);
+                console.log(`\n🚨 FOUND NEW SCAM: ${name} @ ${address} (${balance} ETH)`);
 
                 db.push({
                     address,
@@ -201,62 +202,40 @@ async function main() {
                 newFound++;
             }
         } catch (e) {
-            console.error(`  Error checking candidate ${address}:`, e);
+            console.error(`Error checking ${address}:`, e);
         }
     }
 
-    // 4. Save Database
+    // --- SAVE & REPORT ---
     await writeFile(SCAM_DB_FILE, JSON.stringify(db, null, 2));
 
-    // 5. Update README with Marker System
     const readmePath = path.join(process.cwd(), "README.md");
     let readmeContent = "";
+    try { readmeContent = await readFile(readmePath, "utf-8"); }
+    catch { readmeContent = "# Scam Tracker\n\n<!-- SCAM_LIST_START -->\n<!-- SCAM_LIST_END -->"; }
 
-    try {
-        readmeContent = await readFile(readmePath, "utf-8");
-    } catch (e) {
-        console.log("README not found, creating new one.");
-        // If file doesn't exist, create a basic one with markers
-        readmeContent = "# Scam Tracker\n\n<!-- SCAM_LIST_START -->\n<!-- SCAM_LIST_END -->";
-    }
-
-    // Generate the Table
     let table = `\n| Name | Address | Balance | Status | First Seen |\n`;
     table += `|---|---|---|---|---|\n`;
 
-    // Sort: Active first, then by balance desc
-    db.sort((a, b) => {
-        if (a.status === "ACTIVE" && b.status !== "ACTIVE") return -1;
-        if (a.status !== "ACTIVE" && b.status === "ACTIVE") return 1;
-        return b.balance - a.balance;
-    });
+    db.sort((a, b) => (b.status === "ACTIVE" ? 1 : 0) - (a.status === "ACTIVE" ? 1 : 0) || b.balance - a.balance);
 
     for (const s of db) {
         const link = `https://etherscan.io/address/${s.address}`;
-        // Clean names to avoid breaking markdown tables
         const safeName = (s.name || "Unknown").replace(/\|/g, '-').trim();
         const dateStr = s.first_seen ? s.first_seen.split('T')[0] : "Unknown";
-
         table += `| ${safeName} | [${s.address.slice(0, 8)}...](${link}) | **${s.balance.toFixed(4)}** | ${s.status} | ${dateStr} |\n`;
     }
 
     table += `\n*Last Updated: ${format(new Date(), "yyyy-MM-dd HH:mm:ss")} UTC*\n`;
 
-    // Regex to replace content between markers
     const markerRegex = /<!-- SCAM_LIST_START -->[\s\S]*?<!-- SCAM_LIST_END -->/;
-
     if (readmeContent.match(markerRegex)) {
-        const newContent = readmeContent.replace(
-            markerRegex,
-            `<!-- SCAM_LIST_START -->${table}<!-- SCAM_LIST_END -->`
-        );
-        await writeFile(readmePath, newContent);
-        console.log(`\nDone. Updated ${db.length} entries (Found ${newFound} new).`);
+        await writeFile(readmePath, readmeContent.replace(markerRegex, `<!-- SCAM_LIST_START -->${table}<!-- SCAM_LIST_END -->`));
     } else {
-        console.error("⚠️ Markers <!-- SCAM_LIST_START --> and <!-- SCAM_LIST_END --> not found in README.md");
-        // Fallback: append if markers missing
         await writeFile(readmePath, readmeContent + "\n\n<!-- SCAM_LIST_START -->" + table + "<!-- SCAM_LIST_END -->");
     }
+
+    console.log(`\nDone. Database now has ${db.length} entries.`);
 }
 
 main();
