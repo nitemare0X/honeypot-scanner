@@ -6,7 +6,7 @@ import { existsSync } from "node:fs";
 // --- Configuration ---
 const ETHERSCAN_V2_ENDPOINT = "https://api.etherscan.io/v2/api";
 const SCAM_DB_FILE = "scams.json";
-const LOOKBACK_BLOCKS = 500;
+const LOOKBACK_BLOCKS = 200;
 const BATCH_SIZE = 5;
 
 // Signatures to detect in Source Code
@@ -122,8 +122,11 @@ class Scanner {
             }));
 
             // Small delay between batches
-            await sleep(200);
-            process.stdout.write(`\rProgress: ${Math.min(i + BATCH_SIZE, lookback)}/${lookback} blocks`);
+            await sleep(1100);
+            const progress = Math.min(i + BATCH_SIZE, lookback);
+            const percent = ((progress / lookback) * 100).toFixed(1);
+            process.stdout.write(`\rProgress: ${progress}/${lookback} blocks (${percent}%)`);
+            //process.stdout.write(`\rProgress: ${Math.min(i + BATCH_SIZE, lookback)}/${lookback} blocks`);
         }
         console.log("\nScan complete.");
         return Array.from(candidates);
