@@ -6,7 +6,7 @@ import { existsSync } from "node:fs";
 // --- Configuration ---
 const ETHERSCAN_V2_ENDPOINT = "https://api.etherscan.io/v2/api";
 const SCAM_DB_FILE = "scams.json";
-const LOOKBACK_BLOCKS = 200;
+const LOOKBACK_BLOCKS = 2000;
 const BATCH_SIZE = 5;
 
 // Signatures to detect in Source Code
