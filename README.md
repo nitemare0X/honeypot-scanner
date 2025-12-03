@@ -16,7 +16,10 @@ This repository runs a scheduled GitHub Action (every 6 hours) to detect a speci
 *This list is automatically updated by the `honeypot-scanner.ts` script.*
 
 <!-- SCAM_LIST_START -->
-*Waiting for first scan...*
+| Name | Address | Balance | Status | First Seen |
+|---|---|---|---|---|
+
+*Last Updated: 2025-12-03 21:58:45 UTC*
 <!-- SCAM_LIST_END -->
 
 ## 🛠️ How it Works
