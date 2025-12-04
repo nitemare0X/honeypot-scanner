@@ -5,7 +5,7 @@
     "balance": 0,
     "name": "Owl_Treasure",
     "first_seen": "2025-12-03T22:10:33.287Z",
-    "last_updated": "2025-12-04T12:31:50.878Z",
+    "last_updated": "2025-12-04T18:23:39.347Z",
     "status": "DRAINED"
   },
   {
@@ -14,16 +14,34 @@
     "balance": 0,
     "name": "Owl_Treasure",
     "first_seen": "2025-12-04T06:38:58.295Z",
-    "last_updated": "2025-12-04T12:31:50.949Z",
+    "last_updated": "2025-12-04T18:23:39.387Z",
     "status": "DRAINED"
   },
   {
     "address": "0x77771c09423b1a8c3e30271a925c33bf6d187e22",
     "chain": "ethereum",
-    "balance": 0.1,
+    "balance": 0,
     "name": "Owl_Treasure",
     "first_seen": "2025-12-04T12:50:10.064Z",
-    "last_updated": "2025-12-04T12:50:10.064Z",
+    "last_updated": "2025-12-04T18:23:39.422Z",
+    "status": "DRAINED"
+  },
+  {
+    "address": "0x9171134263d7028fb4461b2cad1cfa6211798173",
+    "chain": "ethereum",
+    "balance": 45.000000009732,
+    "name": "x_x_game",
+    "first_seen": "2025-12-04T18:40:06.289Z",
+    "last_updated": "2025-12-04T18:40:06.289Z",
+    "status": "ACTIVE"
+  },
+  {
+    "address": "0x777734e6fdddbe3550d43a30d522564bd5218324",
+    "chain": "ethereum",
+    "balance": 0.1,
+    "name": "Owl_Treasure",
+    "first_seen": "2025-12-04T18:40:07.999Z",
+    "last_updated": "2025-12-04T18:40:07.999Z",
     "status": "ACTIVE"
   }
 ]
