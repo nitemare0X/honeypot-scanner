@@ -24,7 +24,7 @@ This repository runs a scheduled GitHub Action (every 6 hours) to detect a speci
 | Owl_Treasure | [0x77771c...](https://etherscan.io/address/0x77771c09423b1a8c3e30271a925c33bf6d187e22) | **0.0000** | DRAINED | 2025-12-04 |
 | Owl_Treasure | [0x777734...](https://etherscan.io/address/0x777734e6fdddbe3550d43a30d522564bd5218324) | **0.0000** | DRAINED | 2025-12-04 |
 
-*Last Updated: 2025-12-07 01:31:37 UTC*
+*Last Updated: 2025-12-07 06:37:50 UTC*
 <!-- SCAM_LIST_END -->
 
 ## 🛠️ How it Works

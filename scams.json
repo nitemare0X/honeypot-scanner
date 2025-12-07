@@ -5,7 +5,7 @@
     "balance": 0,
     "name": "Owl_Treasure",
     "first_seen": "2025-12-03T22:10:33.287Z",
-    "last_updated": "2025-12-07T01:14:51.441Z",
+    "last_updated": "2025-12-07T06:20:04.985Z",
     "status": "DRAINED"
   },
   {
@@ -14,7 +14,7 @@
     "balance": 0,
     "name": "Owl_Treasure",
     "first_seen": "2025-12-04T06:38:58.295Z",
-    "last_updated": "2025-12-07T01:14:51.555Z",
+    "last_updated": "2025-12-07T06:20:05.056Z",
     "status": "DRAINED"
   },
   {
@@ -23,7 +23,7 @@
     "balance": 0,
     "name": "Owl_Treasure",
     "first_seen": "2025-12-04T12:50:10.064Z",
-    "last_updated": "2025-12-07T01:14:51.673Z",
+    "last_updated": "2025-12-07T06:20:05.143Z",
     "status": "DRAINED"
   },
   {
@@ -32,7 +32,7 @@
     "balance": 45.000000009732,
     "name": "x_x_game",
     "first_seen": "2025-12-04T18:40:06.289Z",
-    "last_updated": "2025-12-07T01:14:52.861Z",
+    "last_updated": "2025-12-07T06:20:06.440Z",
     "status": "ACTIVE"
   },
   {
@@ -41,7 +41,7 @@
     "balance": 0,
     "name": "Owl_Treasure",
     "first_seen": "2025-12-04T18:40:07.999Z",
-    "last_updated": "2025-12-07T01:14:52.940Z",
+    "last_updated": "2025-12-07T06:20:06.498Z",
     "status": "DRAINED"
   }
 ]
