@@ -5,7 +5,7 @@
     "balance": 0,
     "name": "Owl_Treasure",
     "first_seen": "2025-12-03T22:10:33.287Z",
-    "last_updated": "2025-12-10T06:24:08.941Z",
+    "last_updated": "2025-12-10T12:30:56.169Z",
     "status": "DRAINED"
   },
   {
@@ -14,7 +14,7 @@
     "balance": 0,
     "name": "Owl_Treasure",
     "first_seen": "2025-12-04T06:38:58.295Z",
-    "last_updated": "2025-12-10T06:24:09.008Z",
+    "last_updated": "2025-12-10T12:30:56.257Z",
     "status": "DRAINED"
   },
   {
@@ -23,7 +23,7 @@
     "balance": 0,
     "name": "Owl_Treasure",
     "first_seen": "2025-12-04T12:50:10.064Z",
-    "last_updated": "2025-12-10T06:24:09.069Z",
+    "last_updated": "2025-12-10T12:30:56.358Z",
     "status": "DRAINED"
   },
   {
@@ -32,7 +32,7 @@
     "balance": 45.000000009732,
     "name": "x_x_game",
     "first_seen": "2025-12-04T18:40:06.289Z",
-    "last_updated": "2025-12-10T06:24:10.191Z",
+    "last_updated": "2025-12-10T12:30:57.547Z",
     "status": "ACTIVE"
   },
   {
@@ -41,7 +41,7 @@
     "balance": 0,
     "name": "Owl_Treasure",
     "first_seen": "2025-12-04T18:40:07.999Z",
-    "last_updated": "2025-12-10T06:24:10.253Z",
+    "last_updated": "2025-12-10T12:30:57.635Z",
     "status": "DRAINED"
   },
   {
@@ -50,7 +50,7 @@
     "balance": 40.000000009732,
     "name": "PI_quiz",
     "first_seen": "2025-12-08T06:41:09.219Z",
-    "last_updated": "2025-12-10T06:24:10.315Z",
+    "last_updated": "2025-12-10T12:30:57.715Z",
     "status": "ACTIVE"
   },
   {
@@ -59,7 +59,7 @@
     "balance": 40.000000000007,
     "name": "the_BEST_QUIZ",
     "first_seen": "2025-12-10T06:40:26.720Z",
-    "last_updated": "2025-12-10T06:40:26.720Z",
+    "last_updated": "2025-12-10T12:30:58.867Z",
     "status": "ACTIVE"
   }
 ]
