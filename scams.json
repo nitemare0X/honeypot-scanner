@@ -5,7 +5,7 @@
     "balance": 0,
     "name": "Owl_Treasure",
     "first_seen": "2025-12-03T22:10:33.287Z",
-    "last_updated": "2025-12-18T01:07:09.896Z",
+    "last_updated": "2025-12-18T06:24:05.369Z",
     "status": "DRAINED"
   },
   {
@@ -14,7 +14,7 @@
     "balance": 0,
     "name": "Owl_Treasure",
     "first_seen": "2025-12-04T06:38:58.295Z",
-    "last_updated": "2025-12-18T01:07:09.969Z",
+    "last_updated": "2025-12-18T06:24:05.429Z",
     "status": "DRAINED"
   },
   {
@@ -23,7 +23,7 @@
     "balance": 0,
     "name": "Owl_Treasure",
     "first_seen": "2025-12-04T12:50:10.064Z",
-    "last_updated": "2025-12-18T01:07:10.047Z",
+    "last_updated": "2025-12-18T06:24:05.510Z",
     "status": "DRAINED"
   },
   {
@@ -32,7 +32,7 @@
     "balance": 0,
     "name": "x_x_game",
     "first_seen": "2025-12-04T18:40:06.289Z",
-    "last_updated": "2025-12-18T01:07:11.195Z",
+    "last_updated": "2025-12-18T06:24:06.621Z",
     "status": "DRAINED"
   },
   {
@@ -41,7 +41,7 @@
     "balance": 0,
     "name": "Owl_Treasure",
     "first_seen": "2025-12-04T18:40:07.999Z",
-    "last_updated": "2025-12-18T01:07:11.266Z",
+    "last_updated": "2025-12-18T06:24:06.678Z",
     "status": "DRAINED"
   },
   {
@@ -50,7 +50,7 @@
     "balance": 0,
     "name": "PI_quiz",
     "first_seen": "2025-12-08T06:41:09.219Z",
-    "last_updated": "2025-12-18T01:07:11.337Z",
+    "last_updated": "2025-12-18T06:24:06.737Z",
     "status": "DRAINED"
   },
   {
@@ -59,7 +59,7 @@
     "balance": 40.000000000007,
     "name": "the_BEST_QUIZ",
     "first_seen": "2025-12-10T06:40:26.720Z",
-    "last_updated": "2025-12-18T01:07:12.479Z",
+    "last_updated": "2025-12-18T06:24:07.849Z",
     "status": "ACTIVE"
   },
   {
@@ -68,7 +68,7 @@
     "balance": 45.000000009732,
     "name": "x_x_Game",
     "first_seen": "2025-12-12T06:44:38.093Z",
-    "last_updated": "2025-12-18T01:07:12.552Z",
+    "last_updated": "2025-12-18T06:24:07.906Z",
     "status": "ACTIVE"
   },
   {
@@ -77,7 +77,7 @@
     "balance": 40.000000009732,
     "name": "PI_Quiz",
     "first_seen": "2025-12-14T06:38:10.548Z",
-    "last_updated": "2025-12-18T01:07:12.623Z",
+    "last_updated": "2025-12-18T06:24:07.964Z",
     "status": "ACTIVE"
   }
 ]
