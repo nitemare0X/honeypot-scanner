@@ -5,7 +5,7 @@
     "balance": 0,
     "name": "Owl_Treasure",
     "first_seen": "2025-12-03T22:10:33.287Z",
-    "last_updated": "2025-12-20T06:21:54.422Z",
+    "last_updated": "2025-12-20T12:26:48.157Z",
     "status": "DRAINED"
   },
   {
@@ -14,7 +14,7 @@
     "balance": 0,
     "name": "Owl_Treasure",
     "first_seen": "2025-12-04T06:38:58.295Z",
-    "last_updated": "2025-12-20T06:21:54.485Z",
+    "last_updated": "2025-12-20T12:26:48.188Z",
     "status": "DRAINED"
   },
   {
@@ -23,7 +23,7 @@
     "balance": 0,
     "name": "Owl_Treasure",
     "first_seen": "2025-12-04T12:50:10.064Z",
-    "last_updated": "2025-12-20T06:21:54.548Z",
+    "last_updated": "2025-12-20T12:26:48.223Z",
     "status": "DRAINED"
   },
   {
@@ -32,7 +32,7 @@
     "balance": 0,
     "name": "x_x_game",
     "first_seen": "2025-12-04T18:40:06.289Z",
-    "last_updated": "2025-12-20T06:21:55.661Z",
+    "last_updated": "2025-12-20T12:26:49.283Z",
     "status": "DRAINED"
   },
   {
@@ -41,7 +41,7 @@
     "balance": 0,
     "name": "Owl_Treasure",
     "first_seen": "2025-12-04T18:40:07.999Z",
-    "last_updated": "2025-12-20T06:21:55.722Z",
+    "last_updated": "2025-12-20T12:26:49.314Z",
     "status": "DRAINED"
   },
   {
@@ -50,7 +50,7 @@
     "balance": 0,
     "name": "PI_quiz",
     "first_seen": "2025-12-08T06:41:09.219Z",
-    "last_updated": "2025-12-20T06:21:55.785Z",
+    "last_updated": "2025-12-20T12:26:49.344Z",
     "status": "DRAINED"
   },
   {
@@ -59,7 +59,7 @@
     "balance": 0,
     "name": "the_BEST_QUIZ",
     "first_seen": "2025-12-10T06:40:26.720Z",
-    "last_updated": "2025-12-20T06:21:56.906Z",
+    "last_updated": "2025-12-20T12:26:50.403Z",
     "status": "DRAINED"
   },
   {
@@ -68,7 +68,7 @@
     "balance": 45.000000009732,
     "name": "x_x_Game",
     "first_seen": "2025-12-12T06:44:38.093Z",
-    "last_updated": "2025-12-20T06:21:56.968Z",
+    "last_updated": "2025-12-20T12:26:50.434Z",
     "status": "ACTIVE"
   },
   {
@@ -77,7 +77,7 @@
     "balance": 40.000000009732,
     "name": "PI_Quiz",
     "first_seen": "2025-12-14T06:38:10.548Z",
-    "last_updated": "2025-12-20T06:21:57.027Z",
+    "last_updated": "2025-12-20T12:26:50.465Z",
     "status": "ACTIVE"
   },
   {
@@ -86,7 +86,7 @@
     "balance": 40.000000000007,
     "name": "The_best_quiz",
     "first_seen": "2025-12-19T01:27:08.278Z",
-    "last_updated": "2025-12-20T06:21:58.147Z",
+    "last_updated": "2025-12-20T12:26:51.525Z",
     "status": "ACTIVE"
   }
 ]
