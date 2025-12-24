@@ -32,7 +32,7 @@ This repository runs a scheduled GitHub Action (every 6 hours) to detect a speci
 | PI_Quiz | [0x532d28...](https://etherscan.io/address/0x532d2881e453701e1b6c18b60a9f9ab49d00b34a) | **0.0000** | DRAINED | 2025-12-14 |
 | The_best_quiz | [0x2fd9eb...](https://etherscan.io/address/0x2fd9eb20724a6b9e2ee83ce50b45e56623b1db4c) | **0.0000** | DRAINED | 2025-12-19 |
 
-*Last Updated: 2025-12-24 12:45:47 UTC*
+*Last Updated: 2025-12-24 18:38:46 UTC*
 <!-- SCAM_LIST_END -->
 
 ## 🛠️ How it Works
