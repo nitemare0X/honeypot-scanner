@@ -34,7 +34,7 @@ This repository runs a scheduled GitHub Action (every 6 hours) to detect a speci
 | x_x_GAME | [0xd97021...](https://etherscan.io/address/0xd97021a680c1ca28ffc3dd9712e7cb07b403d45f) | **0.0000** | DRAINED | 2025-12-23 |
 | PI_QuiZ | [0x784e49...](https://etherscan.io/address/0x784e492e7333ddc6a0ada2454599212017403d14) | **0.0000** | DRAINED | 2025-12-24 |
 
-*Last Updated: 2025-12-26 18:39:47 UTC*
+*Last Updated: 2025-12-27 01:25:01 UTC*
 <!-- SCAM_LIST_END -->
 
 ## 🛠️ How it Works
