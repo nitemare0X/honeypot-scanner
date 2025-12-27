@@ -5,7 +5,7 @@
     "balance": 0,
     "name": "Owl_Treasure",
     "first_seen": "2025-12-03T22:10:33.287Z",
-    "last_updated": "2025-12-27T06:21:56.669Z",
+    "last_updated": "2025-12-27T12:27:55.514Z",
     "status": "DRAINED"
   },
   {
@@ -14,7 +14,7 @@
     "balance": 0,
     "name": "Owl_Treasure",
     "first_seen": "2025-12-04T06:38:58.295Z",
-    "last_updated": "2025-12-27T06:21:56.788Z",
+    "last_updated": "2025-12-27T12:27:55.585Z",
     "status": "DRAINED"
   },
   {
@@ -23,7 +23,7 @@
     "balance": 0,
     "name": "Owl_Treasure",
     "first_seen": "2025-12-04T12:50:10.064Z",
-    "last_updated": "2025-12-27T06:21:56.917Z",
+    "last_updated": "2025-12-27T12:27:55.659Z",
     "status": "DRAINED"
   },
   {
@@ -32,7 +32,7 @@
     "balance": 0,
     "name": "x_x_game",
     "first_seen": "2025-12-04T18:40:06.289Z",
-    "last_updated": "2025-12-27T06:21:58.151Z",
+    "last_updated": "2025-12-27T12:27:56.808Z",
     "status": "DRAINED"
   },
   {
@@ -41,7 +41,7 @@
     "balance": 0,
     "name": "Owl_Treasure",
     "first_seen": "2025-12-04T18:40:07.999Z",
-    "last_updated": "2025-12-27T06:21:58.272Z",
+    "last_updated": "2025-12-27T12:27:56.879Z",
     "status": "DRAINED"
   },
   {
@@ -50,7 +50,7 @@
     "balance": 0,
     "name": "PI_quiz",
     "first_seen": "2025-12-08T06:41:09.219Z",
-    "last_updated": "2025-12-27T06:21:58.385Z",
+    "last_updated": "2025-12-27T12:27:56.951Z",
     "status": "DRAINED"
   },
   {
@@ -59,7 +59,7 @@
     "balance": 0,
     "name": "the_BEST_QUIZ",
     "first_seen": "2025-12-10T06:40:26.720Z",
-    "last_updated": "2025-12-27T06:21:59.622Z",
+    "last_updated": "2025-12-27T12:27:58.093Z",
     "status": "DRAINED"
   },
   {
@@ -68,7 +68,7 @@
     "balance": 0,
     "name": "x_x_Game",
     "first_seen": "2025-12-12T06:44:38.093Z",
-    "last_updated": "2025-12-27T06:21:59.727Z",
+    "last_updated": "2025-12-27T12:27:58.164Z",
     "status": "DRAINED"
   },
   {
@@ -77,7 +77,7 @@
     "balance": 0,
     "name": "PI_Quiz",
     "first_seen": "2025-12-14T06:38:10.548Z",
-    "last_updated": "2025-12-27T06:21:59.845Z",
+    "last_updated": "2025-12-27T12:27:58.236Z",
     "status": "DRAINED"
   },
   {
@@ -86,7 +86,7 @@
     "balance": 0,
     "name": "The_best_quiz",
     "first_seen": "2025-12-19T01:27:08.278Z",
-    "last_updated": "2025-12-27T06:22:01.065Z",
+    "last_updated": "2025-12-27T12:27:59.378Z",
     "status": "DRAINED"
   },
   {
@@ -95,7 +95,7 @@
     "balance": 0,
     "name": "x_x_GAME",
     "first_seen": "2025-12-23T06:40:45.515Z",
-    "last_updated": "2025-12-27T06:22:01.167Z",
+    "last_updated": "2025-12-27T12:27:59.449Z",
     "status": "DRAINED"
   },
   {
@@ -104,7 +104,7 @@
     "balance": 0,
     "name": "PI_QuiZ",
     "first_seen": "2025-12-24T01:25:46.653Z",
-    "last_updated": "2025-12-27T06:22:01.274Z",
+    "last_updated": "2025-12-27T12:27:59.519Z",
     "status": "DRAINED"
   },
   {
@@ -113,7 +113,7 @@
     "balance": 0,
     "name": "The_best_Quiz",
     "first_seen": "2025-12-24T12:45:47.981Z",
-    "last_updated": "2025-12-27T06:22:02.491Z",
+    "last_updated": "2025-12-27T12:28:00.662Z",
     "status": "DRAINED"
   },
   {
@@ -122,7 +122,7 @@
     "balance": 45.000000009732,
     "name": "x_X_game",
     "first_seen": "2025-12-25T06:39:46.495Z",
-    "last_updated": "2025-12-27T06:22:02.606Z",
+    "last_updated": "2025-12-27T12:28:00.733Z",
     "status": "ACTIVE"
   },
   {
@@ -131,7 +131,7 @@
     "balance": 40.000000009732,
     "name": "PI_QUIZ",
     "first_seen": "2025-12-26T12:46:38.079Z",
-    "last_updated": "2025-12-27T06:22:02.725Z",
+    "last_updated": "2025-12-27T12:28:00.804Z",
     "status": "ACTIVE"
   }
 ]
