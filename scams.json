@@ -5,7 +5,7 @@
     "balance": 0,
     "name": "Owl_Treasure",
     "first_seen": "2025-12-03T22:10:33.287Z",
-    "last_updated": "2026-01-09T12:31:39.249Z",
+    "last_updated": "2026-01-09T18:23:55.156Z",
     "status": "DRAINED"
   },
   {
@@ -14,7 +14,7 @@
     "balance": 0,
     "name": "Owl_Treasure",
     "first_seen": "2025-12-04T06:38:58.295Z",
-    "last_updated": "2026-01-09T12:31:39.281Z",
+    "last_updated": "2026-01-09T18:23:55.193Z",
     "status": "DRAINED"
   },
   {
@@ -23,7 +23,7 @@
     "balance": 0,
     "name": "Owl_Treasure",
     "first_seen": "2025-12-04T12:50:10.064Z",
-    "last_updated": "2026-01-09T12:31:39.318Z",
+    "last_updated": "2026-01-09T18:23:55.226Z",
     "status": "DRAINED"
   },
   {
@@ -32,7 +32,7 @@
     "balance": 0,
     "name": "x_x_game",
     "first_seen": "2025-12-04T18:40:06.289Z",
-    "last_updated": "2026-01-09T12:31:40.383Z",
+    "last_updated": "2026-01-09T18:23:56.295Z",
     "status": "DRAINED"
   },
   {
@@ -41,7 +41,7 @@
     "balance": 0,
     "name": "Owl_Treasure",
     "first_seen": "2025-12-04T18:40:07.999Z",
-    "last_updated": "2026-01-09T12:31:40.414Z",
+    "last_updated": "2026-01-09T18:23:56.329Z",
     "status": "DRAINED"
   },
   {
@@ -50,7 +50,7 @@
     "balance": 0,
     "name": "PI_quiz",
     "first_seen": "2025-12-08T06:41:09.219Z",
-    "last_updated": "2026-01-09T12:31:40.446Z",
+    "last_updated": "2026-01-09T18:23:56.363Z",
     "status": "DRAINED"
   },
   {
@@ -59,7 +59,7 @@
     "balance": 0,
     "name": "the_BEST_QUIZ",
     "first_seen": "2025-12-10T06:40:26.720Z",
-    "last_updated": "2026-01-09T12:31:41.509Z",
+    "last_updated": "2026-01-09T18:23:57.429Z",
     "status": "DRAINED"
   },
   {
@@ -68,7 +68,7 @@
     "balance": 0,
     "name": "x_x_Game",
     "first_seen": "2025-12-12T06:44:38.093Z",
-    "last_updated": "2026-01-09T12:31:41.540Z",
+    "last_updated": "2026-01-09T18:23:57.463Z",
     "status": "DRAINED"
   },
   {
@@ -77,7 +77,7 @@
     "balance": 0,
     "name": "PI_Quiz",
     "first_seen": "2025-12-14T06:38:10.548Z",
-    "last_updated": "2026-01-09T12:31:41.572Z",
+    "last_updated": "2026-01-09T18:23:57.497Z",
     "status": "DRAINED"
   },
   {
@@ -86,7 +86,7 @@
     "balance": 0,
     "name": "The_best_quiz",
     "first_seen": "2025-12-19T01:27:08.278Z",
-    "last_updated": "2026-01-09T12:31:42.633Z",
+    "last_updated": "2026-01-09T18:23:58.566Z",
     "status": "DRAINED"
   },
   {
@@ -95,7 +95,7 @@
     "balance": 0,
     "name": "x_x_GAME",
     "first_seen": "2025-12-23T06:40:45.515Z",
-    "last_updated": "2026-01-09T12:31:42.663Z",
+    "last_updated": "2026-01-09T18:23:58.601Z",
     "status": "DRAINED"
   },
   {
@@ -104,7 +104,7 @@
     "balance": 0,
     "name": "PI_QuiZ",
     "first_seen": "2025-12-24T01:25:46.653Z",
-    "last_updated": "2026-01-09T12:31:42.695Z",
+    "last_updated": "2026-01-09T18:23:58.636Z",
     "status": "DRAINED"
   },
   {
@@ -113,7 +113,7 @@
     "balance": 0,
     "name": "The_best_Quiz",
     "first_seen": "2025-12-24T12:45:47.981Z",
-    "last_updated": "2026-01-09T12:31:43.760Z",
+    "last_updated": "2026-01-09T18:23:59.703Z",
     "status": "DRAINED"
   },
   {
@@ -122,7 +122,7 @@
     "balance": 0,
     "name": "x_X_game",
     "first_seen": "2025-12-25T06:39:46.495Z",
-    "last_updated": "2026-01-09T12:31:43.792Z",
+    "last_updated": "2026-01-09T18:23:59.737Z",
     "status": "DRAINED"
   },
   {
@@ -131,7 +131,7 @@
     "balance": 0,
     "name": "PI_QUIZ",
     "first_seen": "2025-12-26T12:46:38.079Z",
-    "last_updated": "2026-01-09T12:31:43.824Z",
+    "last_updated": "2026-01-09T18:23:59.774Z",
     "status": "DRAINED"
   },
   {
@@ -140,17 +140,17 @@
     "balance": 0,
     "name": "x_X_Game",
     "first_seen": "2025-12-30T12:47:33.953Z",
-    "last_updated": "2026-01-09T12:31:44.887Z",
+    "last_updated": "2026-01-09T18:24:00.841Z",
     "status": "DRAINED"
   },
   {
     "address": "0xa9b9743193e9b57a99b2ca79ba2c3879fefaff53",
     "chain": "ethereum",
-    "balance": 40.000000009732,
+    "balance": 0,
     "name": "pix_quiz",
     "first_seen": "2026-01-02T18:38:50.493Z",
-    "last_updated": "2026-01-09T12:31:44.919Z",
-    "status": "ACTIVE"
+    "last_updated": "2026-01-09T18:24:00.876Z",
+    "status": "DRAINED"
   },
   {
     "address": "0x58601b315360bb7d4b8d7cc291823e4cd9c43d58",
@@ -158,7 +158,7 @@
     "balance": 40.000000000007,
     "name": "The_best_QUIZ",
     "first_seen": "2026-01-05T06:46:20.429Z",
-    "last_updated": "2026-01-09T12:31:44.952Z",
+    "last_updated": "2026-01-09T18:24:00.910Z",
     "status": "ACTIVE"
   },
   {
@@ -167,7 +167,16 @@
     "balance": 45.000000009732,
     "name": "x_X_GamE",
     "first_seen": "2026-01-07T12:48:30.570Z",
-    "last_updated": "2026-01-09T12:31:46.014Z",
+    "last_updated": "2026-01-09T18:24:01.990Z",
+    "status": "ACTIVE"
+  },
+  {
+    "address": "0xf2be235eee9492ac108aaae474b7823efde8527f",
+    "chain": "ethereum",
+    "balance": 40.000000009732,
+    "name": "pix_Quiz",
+    "first_seen": "2026-01-09T18:39:29.118Z",
+    "last_updated": "2026-01-09T18:39:29.118Z",
     "status": "ACTIVE"
   }
 ]
