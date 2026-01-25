@@ -20,7 +20,7 @@ This repository runs a scheduled GitHub Action (every 6 hours) to detect a speci
 |---|---|---|---|---|
 | X_x_game | [0x2c8ce6...](https://etherscan.io/address/0x2c8ce6e5d5796ca2cc97ea86c999918f0ea9ad9d) | **45.0000** | ACTIVE | 2026-01-21 |
 | pix_QUIZ | [0x510c27...](https://etherscan.io/address/0x510c275cff2767580ae17e7763cde0d3d9bdec42) | **40.0000** | ACTIVE | 2026-01-23 |
-| The_Best_Quiz | [0x1cc3c9...](https://etherscan.io/address/0x1cc3c91b6cfb11a5545dcb427d848ad1bdcdaab9) | **40.0000** | ACTIVE | 2026-01-19 |
+| The_Best_QuiZ | [0x6df1c6...](https://etherscan.io/address/0x6df1c6ff8a0a8ceeed577cecef4ac06676606bef) | **40.0000** | ACTIVE | 2026-01-25 |
 | Owl_Treasure | [0x777791...](https://etherscan.io/address/0x7777915efd4fa386104914c264242d40ec4b451a) | **0.0000** | DRAINED | 2025-12-03 |
 | Owl_Treasure | [0x777784...](https://etherscan.io/address/0x77778420b93c8c6dae434f684cbff2300f847da0) | **0.0000** | DRAINED | 2025-12-04 |
 | Owl_Treasure | [0x77771c...](https://etherscan.io/address/0x77771c09423b1a8c3e30271a925c33bf6d187e22) | **0.0000** | DRAINED | 2025-12-04 |
@@ -44,8 +44,9 @@ This repository runs a scheduled GitHub Action (every 6 hours) to detect a speci
 | The_Best_quiz | [0xeb5b40...](https://etherscan.io/address/0xeb5b4090a69a8f382e807178ee4b630266ce5f85) | **0.0000** | DRAINED | 2026-01-12 |
 | x_X_GAME | [0x84bb9f...](https://etherscan.io/address/0x84bb9f507d3642cc3173292c8f0a3de229d363b3) | **0.0000** | DRAINED | 2026-01-14 |
 | pix_QuiZ | [0xae074d...](https://etherscan.io/address/0xae074d8fd8f1e50d44319d5087b9f15eafb8ed26) | **0.0000** | DRAINED | 2026-01-16 |
+| The_Best_Quiz | [0x1cc3c9...](https://etherscan.io/address/0x1cc3c91b6cfb11a5545dcb427d848ad1bdcdaab9) | **0.0000** | DRAINED | 2026-01-19 |
 
-*Last Updated: 2026-01-25 01:36:03 UTC*
+*Last Updated: 2026-01-25 06:42:25 UTC*
 <!-- SCAM_LIST_END -->
 
 ## 🛠️ How it Works
