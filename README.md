@@ -54,7 +54,7 @@ This repository runs a scheduled GitHub Action (every 6 hours) to detect a speci
 | X_x_GamE | [0x8afcf9...](https://etherscan.io/address/0x8afcf9f78910635bc365be6869b8ce990c029b46) | **0.0000** | DRAINED | 2026-02-03 |
 | The_Best_QUIZ | [0xe3819f...](https://etherscan.io/address/0xe3819fde81a182f0404ee1f4ff9de57c873c5ebc) | **0.0000** | DRAINED | 2026-02-07 |
 
-*Last Updated: 2026-02-10 19:15:49 UTC*
+*Last Updated: 2026-02-11 02:11:33 UTC*
 <!-- SCAM_LIST_END -->
 
 ## 🛠️ How it Works
