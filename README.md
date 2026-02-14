@@ -20,7 +20,7 @@ This repository runs a scheduled GitHub Action (every 6 hours) to detect a speci
 |---|---|---|---|---|
 | X_x_GAME | [0xc6571b...](https://etherscan.io/address/0xc6571b8611751d6e377762ff4a89045da40f2eb2) | **45.0000** | ACTIVE | 2026-02-10 |
 | Pix_QUIZ | [0xe33e35...](https://etherscan.io/address/0xe33e356e3ee7b26b151504aaf69c495c0c36a1ce) | **30.0000** | ACTIVE | 2026-02-12 |
-| The_BEST_quiz | [0x05aeff...](https://etherscan.io/address/0x05aeff2e38b307b7dc234fbf8b5f9ab9e8479dcf) | **30.0000** | ACTIVE | 2026-02-07 |
+| The_BEST_Quiz | [0x04c06a...](https://etherscan.io/address/0x04c06a2cbd6b3949f6ebc7d4fa8ba311b8c49e29) | **30.0000** | ACTIVE | 2026-02-14 |
 | Owl_Treasure | [0x777791...](https://etherscan.io/address/0x7777915efd4fa386104914c264242d40ec4b451a) | **0.0000** | DRAINED | 2025-12-03 |
 | Owl_Treasure | [0x777784...](https://etherscan.io/address/0x77778420b93c8c6dae434f684cbff2300f847da0) | **0.0000** | DRAINED | 2025-12-04 |
 | Owl_Treasure | [0x77771c...](https://etherscan.io/address/0x77771c09423b1a8c3e30271a925c33bf6d187e22) | **0.0000** | DRAINED | 2025-12-04 |
@@ -53,10 +53,11 @@ This repository runs a scheduled GitHub Action (every 6 hours) to detect a speci
 | The_Best_QUIZ | [0x1c3c88...](https://etherscan.io/address/0x1c3c88319d656c24aa08c81c7f0495e9d0722893) | **0.0000** | DRAINED | 2026-01-31 |
 | X_x_GamE | [0x8afcf9...](https://etherscan.io/address/0x8afcf9f78910635bc365be6869b8ce990c029b46) | **0.0000** | DRAINED | 2026-02-03 |
 | Pix_Quiz | [0x7377dc...](https://etherscan.io/address/0x7377dcd63f6147caab4504a9549fce79bda48f04) | **0.0000** | DRAINED | 2026-02-05 |
+| The_BEST_quiz | [0x05aeff...](https://etherscan.io/address/0x05aeff2e38b307b7dc234fbf8b5f9ab9e8479dcf) | **0.0000** | DRAINED | 2026-02-07 |
 | The_Best_QUIZ | [0xe3819f...](https://etherscan.io/address/0xe3819fde81a182f0404ee1f4ff9de57c873c5ebc) | **0.0000** | DRAINED | 2026-02-07 |
 | Pix_Quiz | [0x673c1e...](https://etherscan.io/address/0x673c1e1734afb0040ad18f166b3393849a289a14) | **0.0000** | DRAINED | 2026-02-12 |
 
-*Last Updated: 2026-02-14 06:54:34 UTC*
+*Last Updated: 2026-02-14 12:49:17 UTC*
 <!-- SCAM_LIST_END -->
 
 ## 🛠️ How it Works
