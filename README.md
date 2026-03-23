@@ -73,7 +73,7 @@ This repository runs a scheduled GitHub Action (every 6 hours) to detect a speci
 | PiX_QUIZ | [0xb53d12...](https://etherscan.io/address/0xb53d12ce8b98e306e8298c490018a1044738ff3f) | **0.0000** | DRAINED | 2026-03-12 |
 | go_Game | [0x5f7a65...](https://etherscan.io/address/0x5f7a653c05648355d1b33863f2e5dd78b22bd2cc) | **0.0000** | DRAINED | 2026-03-17 |
 
-*Last Updated: 2026-03-23 02:01:08 UTC*
+*Last Updated: 2026-03-23 07:17:31 UTC*
 <!-- SCAM_LIST_END -->
 
 ## 🛠️ How it Works
