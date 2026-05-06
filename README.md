@@ -93,7 +93,7 @@ This repository runs a scheduled GitHub Action (every 6 hours) to detect a speci
 | GO_GAME | [0x72bc9b...](https://etherscan.io/address/0x72bc9bd4bda2039f5fd95d46caa6da2262c65fae) | **0.0000** | DRAINED | 2026-04-28 |
 | IS_Game | [0xe4d4e9...](https://etherscan.io/address/0xe4d4e9ebbc18007de6a2b948c8270dddea30f614) | **0.0000** | DRAINED | 2026-04-30 |
 
-*Last Updated: 2026-05-06 14:08:25 UTC*
+*Last Updated: 2026-05-06 19:43:21 UTC*
 <!-- SCAM_LIST_END -->
 
 ## 🛠️ How it Works
