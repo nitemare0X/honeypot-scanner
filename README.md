@@ -97,7 +97,7 @@ This repository runs a scheduled GitHub Action (every 6 hours) to detect a speci
 | gx_game | [0x64d12e...](https://etherscan.io/address/0x64d12e67ea18ce9b2d63d96642f01d09d760ef9f) | **0.0000** | DRAINED | 2026-05-04 |
 | Come_to_play | [0x885596...](https://etherscan.io/address/0x885596ee329812121e8858eaeb75c5bf89a656f4) | **0.0000** | DRAINED | 2026-05-07 |
 
-*Last Updated: 2026-05-13 02:50:08 UTC*
+*Last Updated: 2026-05-13 08:53:25 UTC*
 <!-- SCAM_LIST_END -->
 
 ## 🛠️ How it Works
