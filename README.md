@@ -19,7 +19,7 @@ This repository runs a scheduled GitHub Action (every 6 hours) to detect a speci
 | Name | Address | Balance | Status | First Seen |
 |---|---|---|---|---|
 | GX_game | [0x0b75be...](https://etherscan.io/address/0x0b75be3efb1b956ee9f5dc4a94ab59572d163a96) | **10.0000** | ACTIVE | 2026-05-30 |
-| COME_to_PLAY | [0xc93064...](https://etherscan.io/address/0xc93064f3708e43f9e6b4da933a45b9aeced45d93) | **6.0000** | ACTIVE | 2026-05-28 |
+| COME_To_play | [0x954759...](https://etherscan.io/address/0x9547599caa1dbbbcb330f1305da951523fbcf3b7) | **5.0000** | ACTIVE | 2026-06-02 |
 | IS_Game | [0x93f423...](https://etherscan.io/address/0x93f423c8291de10146bdfcf364ad9da904ac563f) | **1.0000** | ACTIVE | 2026-06-01 |
 | Owl_Treasure | [0x777791...](https://etherscan.io/address/0x7777915efd4fa386104914c264242d40ec4b451a) | **0.0000** | DRAINED | 2025-12-03 |
 | Owl_Treasure | [0x777784...](https://etherscan.io/address/0x77778420b93c8c6dae434f684cbff2300f847da0) | **0.0000** | DRAINED | 2025-12-04 |
@@ -110,8 +110,9 @@ This repository runs a scheduled GitHub Action (every 6 hours) to detect a speci
 | COME_to_Play | [0xc89264...](https://etherscan.io/address/0xc89264bed9c2de110e8fa7befe4daddf2c670d12) | **0.0000** | DRAINED | 2026-05-22 |
 | Gx_GAME | [0x5dcc39...](https://etherscan.io/address/0x5dcc3949d4df9a735ba5c9d8d34519e5aa86d554) | **0.0000** | DRAINED | 2026-05-25 |
 | fin_quiz | [0x5f947c...](https://etherscan.io/address/0x5f947c43bc7926527e6eedf3a1ece43884cb252b) | **0.0000** | DRAINED | 2026-05-27 |
+| COME_to_PLAY | [0xc93064...](https://etherscan.io/address/0xc93064f3708e43f9e6b4da933a45b9aeced45d93) | **0.0000** | DRAINED | 2026-05-28 |
 
-*Last Updated: 2026-06-02 03:10:08 UTC*
+*Last Updated: 2026-06-02 10:27:47 UTC*
 <!-- SCAM_LIST_END -->
 
 ## 🛠️ How it Works
