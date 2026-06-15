@@ -120,7 +120,7 @@ This repository runs a scheduled GitHub Action (every 6 hours) to detect a speci
 | COME_To_PlaY | [0x69aa36...](https://etherscan.io/address/0x69aa36a411a1ad6a78a045265bd005085f744d40) | **0.0000** | DRAINED | 2026-06-09 |
 | ra_quiz | [0x9ad33d...](https://etherscan.io/address/0x9ad33dfa6c15a5bd5c3eb1ab5c4de376558bea4e) | **0.0000** | DRAINED | 2026-06-11 |
 
-*Last Updated: 2026-06-15 17:20:25 UTC*
+*Last Updated: 2026-06-15 21:06:01 UTC*
 <!-- SCAM_LIST_END -->
 
 ## 🛠️ How it Works
