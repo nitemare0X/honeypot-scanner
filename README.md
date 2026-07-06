@@ -130,7 +130,7 @@ This repository runs a scheduled GitHub Action (every 6 hours) to detect a speci
 | W_quiz | [0x59bba9...](https://etherscan.io/address/0x59bba9a3a3fda69a4272c54ff80a4c14bcda3a14) | **0.0000** | DRAINED | 2026-06-29 |
 | IS_Game | [0x1030c0...](https://etherscan.io/address/0x1030c088c17ddc5a53179d96f29c0a5351196f53) | **0.0000** | DRAINED | 2026-07-01 |
 
-*Last Updated: 2026-07-06 10:18:08 UTC*
+*Last Updated: 2026-07-06 15:35:04 UTC*
 <!-- SCAM_LIST_END -->
 
 ## 🛠️ How it Works
