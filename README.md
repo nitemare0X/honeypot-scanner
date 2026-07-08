@@ -18,8 +18,8 @@ This repository runs a scheduled GitHub Action (every 6 hours) to detect a speci
 <!-- SCAM_LIST_START -->
 | Name | Address | Balance | Status | First Seen |
 |---|---|---|---|---|
-| IS_Game | [0x989568...](https://etherscan.io/address/0x98956867ec53e6e63c578d3dbef743e9c2377fd4) | **5.0000** | ACTIVE | 2026-07-04 |
-| just_Play | [0x3da273...](https://etherscan.io/address/0x3da273a6778014bacf970ce57acf33a9996adc6d) | **5.0000** | ACTIVE | 2026-07-06 |
+| W_Quiz | [0xa58374...](https://etherscan.io/address/0xa58374a0d4a0cd5df52a6b589f14e20bdf9fb226) | **5.0000** | ACTIVE | 2026-07-08 |
+| just_play | [0x5b93dc...](https://etherscan.io/address/0x5b93dce32c0f8917dbf27b3d8ce49026e20b752d) | **1.0000** | ACTIVE | 2026-07-08 |
 | Owl_Treasure | [0x777791...](https://etherscan.io/address/0x7777915efd4fa386104914c264242d40ec4b451a) | **0.0000** | DRAINED | 2025-12-03 |
 | Owl_Treasure | [0x777784...](https://etherscan.io/address/0x77778420b93c8c6dae434f684cbff2300f847da0) | **0.0000** | DRAINED | 2025-12-04 |
 | Owl_Treasure | [0x77771c...](https://etherscan.io/address/0x77771c09423b1a8c3e30271a925c33bf6d187e22) | **0.0000** | DRAINED | 2025-12-04 |
@@ -129,8 +129,10 @@ This repository runs a scheduled GitHub Action (every 6 hours) to detect a speci
 | COME_TO_PLAY | [0x6cca4c...](https://etherscan.io/address/0x6cca4cfbfb35b569f4a259327619c57594181535) | **0.0000** | DRAINED | 2026-06-27 |
 | W_quiz | [0x59bba9...](https://etherscan.io/address/0x59bba9a3a3fda69a4272c54ff80a4c14bcda3a14) | **0.0000** | DRAINED | 2026-06-29 |
 | IS_Game | [0x1030c0...](https://etherscan.io/address/0x1030c088c17ddc5a53179d96f29c0a5351196f53) | **0.0000** | DRAINED | 2026-07-01 |
+| IS_Game | [0x989568...](https://etherscan.io/address/0x98956867ec53e6e63c578d3dbef743e9c2377fd4) | **0.0000** | DRAINED | 2026-07-04 |
+| just_Play | [0x3da273...](https://etherscan.io/address/0x3da273a6778014bacf970ce57acf33a9996adc6d) | **0.0000** | DRAINED | 2026-07-06 |
 
-*Last Updated: 2026-07-08 08:30:42 UTC*
+*Last Updated: 2026-07-08 14:03:36 UTC*
 <!-- SCAM_LIST_END -->
 
 ## 🛠️ How it Works
