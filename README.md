@@ -146,7 +146,7 @@ This repository runs a scheduled GitHub Action (every 6 hours) to detect a speci
 | Just_PlaY | [0xd0728e...](https://etherscan.io/address/0xd0728ed6b88a06abe33176e8a8b30672776fee67) | **0.0000** | DRAINED | 2026-07-30 |
 | quiz | [0x2aa8c1...](https://etherscan.io/address/0x2aa8c1d55c13c5c63102cd1c12eb711beba6f136) | **0.0000** | DRAINED | 2026-08-01 |
 
-*Last Updated: 2026-08-07 02:35:46 UTC*
+*Last Updated: 2026-08-07 07:24:09 UTC*
 <!-- SCAM_LIST_END -->
 
 ## 🛠️ How it Works
