@@ -147,7 +147,7 @@ This repository runs a scheduled GitHub Action (every 6 hours) to detect a speci
 | quiz | [0x2aa8c1...](https://etherscan.io/address/0x2aa8c1d55c13c5c63102cd1c12eb711beba6f136) | **0.0000** | DRAINED | 2026-08-01 |
 | Just_play | [0x4bd2de...](https://etherscan.io/address/0x4bd2de17dac12ea4c34c81c26b88de4f4f8a7ff6) | **0.0000** | DRAINED | 2026-08-04 |
 
-*Last Updated: 2026-08-09 18:45:33 UTC*
+*Last Updated: 2026-08-10 01:29:03 UTC*
 <!-- SCAM_LIST_END -->
 
 ## 🛠️ How it Works
