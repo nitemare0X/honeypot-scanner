@@ -153,7 +153,7 @@ This repository runs a scheduled GitHub Action (every 6 hours) to detect a speci
 | JusT_play | [0xffbc20...](https://etherscan.io/address/0xffbc20c65ee512ca57d4adfc51fef50e4bbb4b38) | **0.0000** | DRAINED | 2026-08-13 |
 | wf_quiz | [0x4f8abe...](https://etherscan.io/address/0x4f8abea08f3560082a8758267dfa2c3d71f4235a) | **0.0000** | DRAINED | 2026-08-16 |
 
-*Last Updated: 2026-08-22 01:08:57 UTC*
+*Last Updated: 2026-08-22 06:44:20 UTC*
 <!-- SCAM_LIST_END -->
 
 ## 🛠️ How it Works
