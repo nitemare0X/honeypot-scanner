@@ -155,7 +155,7 @@ This repository runs a scheduled GitHub Action (every 6 hours) to detect a speci
 | Just_play | [0x06a001...](https://etherscan.io/address/0x06a00182808b8858f8cb5dd5eb3c4c4009efe642) | **0.0000** | DRAINED | 2026-08-19 |
 | fast_GAME | [0x6aa55b...](https://etherscan.io/address/0x6aa55b1a071ca0b023e433f7d103ce49df6be606) | **0.0000** | DRAINED | 2026-08-21 |
 
-*Last Updated: 2026-08-27 21:50:27 UTC*
+*Last Updated: 2026-08-28 08:41:28 UTC*
 <!-- SCAM_LIST_END -->
 
 ## 🛠️ How it Works
