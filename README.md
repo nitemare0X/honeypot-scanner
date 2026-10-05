@@ -174,7 +174,7 @@ This repository runs a scheduled GitHub Action (every 6 hours) to detect a speci
 | WF_Quiz | [0x196cc4...](https://etherscan.io/address/0x196cc434ba108f3f89720b0eb0007fd67d75ab70) | **0.0000** | DRAINED | 2026-09-25 |
 | gxx_Game | [0xbe8afa...](https://etherscan.io/address/0xbe8afa4e9f684fa5b9402bfd41259e53567dd768) | **0.0000** | DRAINED | 2026-09-27 |
 
-*Last Updated: 2026-10-04 21:00:50 UTC*
+*Last Updated: 2026-10-05 03:44:12 UTC*
 <!-- SCAM_LIST_END -->
 
 ## 🛠️ How it Works
