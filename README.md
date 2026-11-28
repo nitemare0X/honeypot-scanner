@@ -194,7 +194,7 @@ This repository runs a scheduled GitHub Action (every 6 hours) to detect a speci
 | qst_game | [0x57d5e5...](https://etherscan.io/address/0x57d5e56e161c3006e92c0dff75c00d7d39d4414c) | **0.0000** | DRAINED | 2026-11-21 |
 | wwf_quiz | [0x2769f9...](https://etherscan.io/address/0x2769f962bdacdc744d751b39bf4ac80e085290b3) | **0.0000** | DRAINED | 2026-11-22 |
 
-*Last Updated: 2026-11-27 16:12:19 UTC*
+*Last Updated: 2026-11-28 01:11:39 UTC*
 <!-- SCAM_LIST_END -->
 
 ## 🛠️ How it Works
